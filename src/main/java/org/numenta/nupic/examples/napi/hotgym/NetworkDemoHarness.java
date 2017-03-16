@@ -122,6 +122,7 @@ public class NetworkDemoHarness {
     public static Parameters getNetworkDemoTestEncoderParams() {
         Map<String, Map<String, Object>> fieldEncodings = getNetworkDemoFieldEncodingMap();
 
+        //Need to update function call
         Parameters p = Parameters.getEncoderDefaultParameters();
         p.setParameterByKey(KEY.GLOBAL_INHIBITION, true);
         p.setParameterByKey(KEY.COLUMN_DIMENSIONS, new int[] { 2048 });
